@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Impressnator-Web Editor for ImpressJs</title>
+<link href="css/bootstrap.css" rel="stylesheet" />
+<link href='http://fonts.googleapis.com/css?family=Lobster'
+	rel='stylesheet' type='text/css'>
+<style>
+.nav-color {
+	background-color: #607D8B;
+	color: white;
+	font-family: 'Lobster', cursive;
+}
+
+.paint1 {
+	background-color: #ECEFF1;
+	height: 450px;
+	border-right: 3px dashed #ffffff;
+}
+
+.paint2 {
+	background-color: #ECEFF1;
+	height: 450px;
+}
+
+.sterch {
+	
+}
+</style>
+</head>
+<body>
+	<nav class="navbar navbar-inverse nav-color" role="navigation">
+		<div class="container-fluid">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed"
+					data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<span class="sr-only">Toggle navigation</span> <span
+						class="icon-bar"></span> <span class="icon-bar"></span> <span
+						class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" style="color: white; font-size: x-large;"
+					href="#">Impressnator</a>
+			</div>
+			<div class="collapse navbar-collapse"
+				id="bs-example-navbar-collapse-1">
+
+				<ul class="nav navbar-nav" style="float: right;">
+					<li><a style="color: white;" href="#">Save</a></li>
+					<li><a style="color: white;" href="#">Generate</a></li>
+				</ul>
+
+			</div>
+		</div>
+	</nav>
+
+	<div class="row panel panel-default">
+		<div class="col-md-3 paint1">
+			<button id="addSlide" type="button" class="btn btn-info">Add
+				Slide</button>
+			<div style="overflow: auto; height: 400px;">
+				<div id="slider-container" class="panel-body"></div>
+			</div>
+		</div>
+		<div id="slider-data" class="col-md-9 paint2"></div>
+
+	</div>
+
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script>
+		$(document).ready(function() {
+
+			$.get("SlideBox.html", function(data) {
+				$("#slider-container").append(data);
+			});
+			$.get("SlideT1.html", function(data) {
+
+				$("#slider-data").html(data);
+			});
+
+			$("#addSlide").click(function() {
+				$.get("SlideBox.html", function(data) {
+					$("#slider-container").append(data);
+				});
+
+				$.get("SlideT2.html", function(data) {
+
+					$("#slider-data").html(data);
+				});
+
+			});
+
+			$(".closeSlide").click(function() {
+				$(this).css("display", "none");
+
+			});
+
+		});
+	</script>
+</body>
+</html>
