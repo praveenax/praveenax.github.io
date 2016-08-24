@@ -1,0 +1,18 @@
+.nav-color {
+    background-color: #607D8B;
+    color: white;
+    font-family: 'Lobster', cursive;
+}
+
+.paint1 {
+    background-color: #ECEFF1;
+    height: 450px;
+    border-right: 3px dashed #ffffff;
+}
+
+.paint2 {
+    background-color: #ECEFF1;
+    height: 450px;
+}
+
+.sterch {}
