@@ -1,18 +1,10 @@
 // script.js
 var myApp = angular.module('webapp', ['ngRoute', 'firebase']);
 var map;
-//var config = {
-//    apiKey: "AIzaSyC3AFp66yHrTS5OzC1KogV88iklAAcYF5Q",
-//    authDomain: "loctoc-interview.firebaseapp.com",
-//    databaseURL: "https://loctoc-interview.firebaseio.com",
-//    projectId: "loctoc-interview",
-//    storageBucket: "loctoc-interview.appspot.com",
-//    messagingSenderId: "744754369626"
-//};
-//firebase.initializeApp(config);
+
 
 //map key
-//AIzaSyC3AFp66yHrTS5OzC1KogV88iklAAcYF5Q
+
 myApp.config(function ($routeProvider, $sceDelegateProvider) {
 
 //    $routeProvider
