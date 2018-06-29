@@ -1,0 +1,33 @@
+<div>
+    <button ng-click="takeCard()">Take Roster Card</button>
+</div>
+
+<br>
+
+<div>
+    Player 1
+
+    <div>
+        <div class="playerCard" ng-repeat="card in player1Cards track by $index">
+            
+<!--            <br>-->
+            
+
+            <span style="font-size: 15px;float:left;" ng-if="card.attack > 0"><i class="fas fa-angle-double-up"></i>  {{card.attack}} </span>
+            
+            <span style="font-size: 15px;float:right;" ng-if="card.defence > 0"><i class="fas fa-shield-alt"></i>  {{card.defence}}</span>
+            
+            <br>
+            <br>
+            
+            <span style="font-size: 22px;">{{card.title}}
+           </span>
+
+            
+            <br>
+            <br>
+            <span style="font-size: 10px;">Bonus: {{card.bonus}}</span>
+
+        </div>
+    </div>
+</div>
