@@ -1,13 +1,13 @@
 var dataArr = [
- "Lets React!",
-"ReactJS simplifies the overall process of scripting components",
-    "Trending Technology and Quick Adoption Rate",
-    "Important features of React",
-    "<u>Virtual DOM</u> <br> React creates an in-memory data structure cache, which calculates the changes made and then updates the browser. DOM(Document Object Model) is an object that is created by the browser each time a web page is loaded",
-    "<u>One-Way Data Binding</u> <br> ReactJS follows unidirectional data flow or one-way data binding. The major benefit of One-Way-Data binding is that the data flows in a single direction",
-    "<u>Great Developer toolset</u> <br> React is well covered in terms of design and debugging tools. React Developer Tools, available for Chrome and Firefox",
-    "<u>Strong Community</u> <br> React is a reliable and up-to-date technology. It is maintained by the Facebook as well as by more than 1,000 independent contributors worldwide.",
-    "<u>Reusable Components</u> <br> In React every part of applications visuals would be cover inside a self-contained module known as a component. Each component has its own logic and can be reused wherever you need them"
+ "Game Development",
+"Video Game Industry - 130 Billion $ Revenue",
+    "It is the process of creating a Interactive Experiance for the player",
+    "Indie Games - <br> Developed over a short time by an individual or a small team of developers",
+    "Top Indie Games <br><br>Minecraft , Angry Birds",
+    "<ul><li>Development Team</li><li>Design Team</li><li>Programming Team</li><li>Level Design </li><li>Sound Specialist Team</li><li>Tester</li><li>Marketing Team</li></ul>",
+    "Unity Game Engine (C#,JS,Boo) <br> Unreal Engine (C++) <br> Phaser (JS or TS) <br> Amazon Lumberyard (C++)<br> Construct (C++, C or Java)",
+    "<u>How it works?</u><br> Game Loop <br> Draw <br> Event <br> Redraw",
+    "Exercise!"
 ]
 
 var slideContent = [
@@ -134,31 +134,31 @@ for (var i = 0; i < dataArr.length; i++) {
         dataX: "0",
         dataY: "" + ((2000 * i) + 0),
         dataZ: "0",
-        dataRX: "0",
-        dataRY: "0",
-        dataRZ: "0",
+        dataRX: "0"+ ((45 * i) + 0),
+        dataRY: "0" + ((90 * i) + 0),
+        dataRZ: "0" + ((45 * i) + 0),
         dataS: "1",
         qColor: "#fff"
     });
 }
-
-for (var i = 1; i < 17; i++) {
-    dataHere.push({
-        type: "image",
-        
-        dataX: ""+ ((2000 * (i)) + 0),
-        dataY: "0",
-        spread: "100%",
-        url: "./img/Img"+i+".png",
-        height:700,
-        dataZ: "0",
-        dataRX: "0",
-        dataRY: "0",
-        dataRZ: "0",
-        dataS: "1",
-        qColor: "#fff"
-    });
-}
+//
+//for (var i = 1; i < 17; i++) {
+//    dataHere.push({
+//        type: "image",
+//        
+//        dataX: ""+ ((2000 * (i)) + 0),
+//        dataY: "0",
+//        spread: "100%",
+//        url: "./img/Img"+i+".png",
+//        height:700,
+//        dataZ: "0",
+//        dataRX: "0",
+//        dataRY: "0",
+//        dataRZ: "0",
+//        dataS: "1",
+//        qColor: "#fff"
+//    });
+//}
 dataHere.push({
     type: "over"
 });
