@@ -7,7 +7,7 @@ $(document).ready(function () {
         $.each(data, function (key, val) {
 
 //            if (val.owner.login == "praveenax") {
-                items.push("<div class='repo_item' id='" + key + "'><a target='_blank' href='" + val.html_url + "'>" + val.name.charAt(0).toUpperCase() + val.name.substr(1).toLowerCase() + "</a><br><br> Language:"+val.language+"</div>");
+                items.push("<div class='repo_item' id='" + key + "'><a target='_blank' href='" + val.html_url + "'>" + val.name.charAt(0).toUpperCase() + val.name.substr(1).toLowerCase() + "</a><br><br> Language:"+val.language+"<br><br> Size:"+val.size+"</div>");
 //            }
 
         });
